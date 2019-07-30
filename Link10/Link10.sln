@@ -7,8 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Link10_UWP", "Link10_UWP\Li
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Link10_Shared", "Link10\Link10_Shared.shproj", "{F01D771A-B956-49D7-A827-61CFA263EC0F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Link10_Win32", "Link10_Win32\Link10_Win32.csproj", "{0C254077-3228-4DA4-8749-248CB575EE63}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Link10\Link10.projitems*{0c254077-3228-4da4-8749-248cb575ee63}*SharedItemsImports = 4
 		Link10\Link10.projitems*{c99f765a-f7cd-4950-9fe6-30bbf8e9d625}*SharedItemsImports = 4
 		Link10\Link10.projitems*{f01d771a-b956-49d7-a827-61cfa263ec0f}*SharedItemsImports = 13
 	EndGlobalSection
@@ -45,6 +48,26 @@ Global
 		{C99F765A-F7CD-4950-9FE6-30BBF8E9D625}.Release|x64.Build.0 = Release|x64
 		{C99F765A-F7CD-4950-9FE6-30BBF8E9D625}.Release|x86.ActiveCfg = Release|x86
 		{C99F765A-F7CD-4950-9FE6-30BBF8E9D625}.Release|x86.Build.0 = Release|x86
+		{0C254077-3228-4DA4-8749-248CB575EE63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C254077-3228-4DA4-8749-248CB575EE63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C254077-3228-4DA4-8749-248CB575EE63}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{0C254077-3228-4DA4-8749-248CB575EE63}.Debug|ARM.Build.0 = Debug|Any CPU
+		{0C254077-3228-4DA4-8749-248CB575EE63}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{0C254077-3228-4DA4-8749-248CB575EE63}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{0C254077-3228-4DA4-8749-248CB575EE63}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0C254077-3228-4DA4-8749-248CB575EE63}.Debug|x64.Build.0 = Debug|Any CPU
+		{0C254077-3228-4DA4-8749-248CB575EE63}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0C254077-3228-4DA4-8749-248CB575EE63}.Debug|x86.Build.0 = Debug|Any CPU
+		{0C254077-3228-4DA4-8749-248CB575EE63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C254077-3228-4DA4-8749-248CB575EE63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C254077-3228-4DA4-8749-248CB575EE63}.Release|ARM.ActiveCfg = Release|Any CPU
+		{0C254077-3228-4DA4-8749-248CB575EE63}.Release|ARM.Build.0 = Release|Any CPU
+		{0C254077-3228-4DA4-8749-248CB575EE63}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{0C254077-3228-4DA4-8749-248CB575EE63}.Release|ARM64.Build.0 = Release|Any CPU
+		{0C254077-3228-4DA4-8749-248CB575EE63}.Release|x64.ActiveCfg = Release|Any CPU
+		{0C254077-3228-4DA4-8749-248CB575EE63}.Release|x64.Build.0 = Release|Any CPU
+		{0C254077-3228-4DA4-8749-248CB575EE63}.Release|x86.ActiveCfg = Release|Any CPU
+		{0C254077-3228-4DA4-8749-248CB575EE63}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
