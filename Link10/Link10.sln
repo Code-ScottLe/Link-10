@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Link10_UWP", "Link10_UWP\Link10_UWP.csproj", "{C99F765A-F7CD-4950-9FE6-30BBF8E9D625}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Link10_Shared", "Link10\Link10_Shared.shproj", "{F01D771A-B956-49D7-A827-61CFA263EC0F}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Link10\Link10.projitems*{c99f765a-f7cd-4950-9fe6-30bbf8e9d625}*SharedItemsImports = 4
+		Link10\Link10.projitems*{f01d771a-b956-49d7-a827-61cfa263ec0f}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C99F765A-F7CD-4950-9FE6-30BBF8E9D625}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C99F765A-F7CD-4950-9FE6-30BBF8E9D625}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C99F765A-F7CD-4950-9FE6-30BBF8E9D625}.Debug|ARM.ActiveCfg = Debug|ARM
+		{C99F765A-F7CD-4950-9FE6-30BBF8E9D625}.Debug|ARM.Build.0 = Debug|ARM
+		{C99F765A-F7CD-4950-9FE6-30BBF8E9D625}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{C99F765A-F7CD-4950-9FE6-30BBF8E9D625}.Debug|ARM64.Build.0 = Debug|ARM64
+		{C99F765A-F7CD-4950-9FE6-30BBF8E9D625}.Debug|x64.ActiveCfg = Debug|x64
+		{C99F765A-F7CD-4950-9FE6-30BBF8E9D625}.Debug|x64.Build.0 = Debug|x64
+		{C99F765A-F7CD-4950-9FE6-30BBF8E9D625}.Debug|x86.ActiveCfg = Debug|x86
+		{C99F765A-F7CD-4950-9FE6-30BBF8E9D625}.Debug|x86.Build.0 = Debug|x86
+		{C99F765A-F7CD-4950-9FE6-30BBF8E9D625}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C99F765A-F7CD-4950-9FE6-30BBF8E9D625}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C99F765A-F7CD-4950-9FE6-30BBF8E9D625}.Release|ARM.ActiveCfg = Release|ARM
+		{C99F765A-F7CD-4950-9FE6-30BBF8E9D625}.Release|ARM.Build.0 = Release|ARM
+		{C99F765A-F7CD-4950-9FE6-30BBF8E9D625}.Release|ARM64.ActiveCfg = Release|ARM64
+		{C99F765A-F7CD-4950-9FE6-30BBF8E9D625}.Release|ARM64.Build.0 = Release|ARM64
+		{C99F765A-F7CD-4950-9FE6-30BBF8E9D625}.Release|x64.ActiveCfg = Release|x64
+		{C99F765A-F7CD-4950-9FE6-30BBF8E9D625}.Release|x64.Build.0 = Release|x64
+		{C99F765A-F7CD-4950-9FE6-30BBF8E9D625}.Release|x86.ActiveCfg = Release|x86
+		{C99F765A-F7CD-4950-9FE6-30BBF8E9D625}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92718B82-F7B1-43B2-B71C-06081F9C449E}
+	EndGlobalSection
+EndGlobal
