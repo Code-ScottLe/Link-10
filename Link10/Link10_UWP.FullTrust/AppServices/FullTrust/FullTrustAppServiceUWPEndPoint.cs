@@ -5,14 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.AppService;
+using Windows.ApplicationModel.Background;
 using Windows.Foundation.Metadata;
 
 namespace Link10.AppServices.FullTrust
 {
-    public abstract class FullTrustAppServiceUWPEndPoint : AppServiceConnectionEndPoint
+    public abstract class FullTrustAppServiceUWPEndPoint : AppServiceConnectionReceiver
     {
-        protected FullTrustAppServiceUWPEndPoint(AppServiceConnection connection) 
-            : base(connection, true) // UWP always listen to active connection from Win32. 
+        protected FullTrustAppServiceUWPEndPoint(IBackgroundTaskInstance instance, AppServiceTriggerDetails appServiceTriggerDetails)
+            : base(instance, appServiceTriggerDetails)
         {
         }
 
