@@ -31,7 +31,7 @@ namespace Link10.AppServices
             get; protected set;
         }
 
-        public event TypedEventHandler<IAppServiceConnectionEndPoint, AppServiceEndPointTerminationReason> AppServiceConnectionTeminated;
+        public event TypedEventHandler<IAppServiceConnectionEndPoint, AppServiceEndPointTerminationReason> AppServiceConnectionTerminated;
 
         protected AppServiceConnectionEndPoint(AppServiceConnection connection, bool isConnectionAlreadyAlive)
         {
@@ -119,7 +119,7 @@ namespace Link10.AppServices
 
             ConnectionAlive = false;
 
-            AppServiceConnectionTeminated?.Invoke(this, reason);
+            AppServiceConnectionTerminated?.Invoke(this, reason);
 
             return Task.CompletedTask;
         }

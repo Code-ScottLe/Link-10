@@ -16,7 +16,7 @@ namespace Link10.AppServices
 
         string RequestorPackageFamilyName { get; }
 
-        event TypedEventHandler<IAppServiceConnectionEndPoint, AppServiceEndPointTerminationReason> AppServiceConnectionTeminated;
+        event TypedEventHandler<IAppServiceConnectionEndPoint, AppServiceEndPointTerminationReason> AppServiceConnectionTerminated;
 
         Task CloseConnectionAsync(AppServiceEndPointTerminationReason reason);
 

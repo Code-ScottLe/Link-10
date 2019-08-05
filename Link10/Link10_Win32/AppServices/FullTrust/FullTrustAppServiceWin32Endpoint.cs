@@ -19,7 +19,13 @@ namespace Link10.AppServices.FullTrust
 
         protected virtual void OnUnhandledException(object sender, UnhandledExceptionEventArgs e)
         {
-            throw new NotImplementedException();
+            // Notify the host that an uncaught exception happens..
+
+            if (e.IsTerminating)
+            {
+                // If the app is closing down, then notify that it is quitting.
+            }
+
         }
     }
 }
