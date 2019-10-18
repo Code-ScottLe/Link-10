@@ -9,6 +9,7 @@ namespace Link10.AppServices
         RequestorTerminate = 0,
         BackgroundTaskCancelled,
         AppSuspending,
-        GenericError
+        GenericError,
+        Stale
     }
 }
