@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Link10.Win32</id>
+    <version>0.0.1</version>
+    <title>Link10.UWP</title>
+    <authors>Code.ScottLe</authors>
+    <owners>Code.ScottLe</owners>
+    <licenseUrl>https://github.com/Code-ScottLe/Link-10/blob/master/README.md</licenseUrl>
+    <projectUrl>https://github.com/Code-ScottLe/Link-10</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/Code-ScottLe/Link-10/master/Link10/Link10.AppServiceEcho/Assets/Square44x44Logo.scale-200.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Test build of Link10.Win32 </description>
+    <releaseNotes>Initial Release</releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>UWP Link10</tags>
+    <dependencies>
+      <dependency id="System.ValueTuple" version="4.5.0"/>
+      <dependency id="Microsoft.Windows.SDK.Contracts" version="10.0.17134.1000"/>
+      <dependency id="System.Runtime.WindowsRuntime" version="4.6.0"/>
+      <dependency id="System.Runtime.WindowsRuntime.UI.Xaml" version="4.6.0"/>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src=".\bin\Release\Link10_Win32.*" target="lib\net461" />
+  </files>
+</package>

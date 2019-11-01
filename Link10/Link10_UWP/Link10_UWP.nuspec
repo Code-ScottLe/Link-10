@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Link10.UWP</id>
+    <version>0.0.1</version>
+    <title>Link10.UWP</title>
+    <authors>Code.ScottLe</authors>
+    <owners>Code.ScottLe</owners>
+    <licenseUrl>https://github.com/Code-ScottLe/Link-10/blob/master/README.md</licenseUrl>
+    <projectUrl>https://github.com/Code-ScottLe/Link-10</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/Code-ScottLe/Link-10/master/Link10/Link10.AppServiceEcho/Assets/Square44x44Logo.scale-200.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Test build of Link10.UWP </description>
+    <releaseNotes>Initial Release</releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>UWP Link10</tags>
+  </metadata>
+  <files>
+    <file src=".\bin\ARM\Release\Link10_UWP.dll" target="runtimes\win10-arm\lib\uap10.0" />
+    <file src=".\bin\ARM\Release\Link10_UWP.pdb" target="runtimes\win10-arm\lib\uap10.0" />
+    <file src=".\bin\ARM\Release\Link10_UWP.pri" target="runtimes\win10-arm\lib\uap10.0" />
+    <file src=".\bin\x64\Release\Link10_UWP.dll" target="runtimes\win10-x64\lib\uap10.0" />
+    <file src=".\bin\x64\Release\Link10_UWP.pdb" target="runtimes\win10-x64\lib\uap10.0" />
+    <file src=".\bin\x64\Release\Link10_UWP.pri" target="runtimes\win10-x64\lib\uap10.0" />
+    <file src=".\bin\x86\Release\Link10_UWP.dll" target="runtimes\win10-x86\lib\uap10.0" />
+    <file src=".\bin\x86\Release\Link10_UWP.pdb" target="runtimes\win10-x86\lib\uap10.0" />
+    <file src=".\bin\x86\Release\Link10_UWP.pri" target="runtimes\win10-x86\lib\uap10.0" />
+    <file src=".\bin\Release\Link10_UWP.dll" target="ref\uap10.0" />
+    <file src=".\bin\Release\Link10_UWP.pdb" target="ref\uap10.0" />
+    <file src=".\bin\Release\Link10_UWP.pri" target="ref\uap10.0" />
+  </files>
+</package>
