@@ -130,12 +130,6 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Link10_UWP\Link10_UWP.csproj">
-      <Project>{c99f765a-f7cd-4950-9fe6-30bbf8e9d625}</Project>
-      <Name>Link10_UWP</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <SDKReference Include="WindowsDesktop, Version=10.0.17134.0">
       <Name>Windows Desktop Extensions for the UWP</Name>
     </SDKReference>
