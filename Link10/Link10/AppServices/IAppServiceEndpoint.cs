@@ -8,7 +8,7 @@ using Windows.Foundation.Collections;
 
 namespace Link10.AppServices
 {
-    public interface IAppServiceConnectionEndPoint
+    public interface IAppServiceEndpoint
     {
         string AppServiceName { get; }
 
@@ -16,9 +16,9 @@ namespace Link10.AppServices
 
         string RequestorPackageFamilyName { get; }
 
-        event TypedEventHandler<IAppServiceConnectionEndPoint, AppServiceEndPointTerminationReason> AppServiceConnectionTerminated;
+        event TypedEventHandler<IAppServiceEndpoint, AppServiceEndpointTerminationReason> AppServiceConnectionTerminated;
 
-        Task CloseConnectionAsync(AppServiceEndPointTerminationReason reason);
+        Task CloseConnectionAsync(AppServiceEndpointTerminationReason reason);
 
         Task<ValueSet> SendMessageAsync(params (string key, object value)[] quickMessage);
 

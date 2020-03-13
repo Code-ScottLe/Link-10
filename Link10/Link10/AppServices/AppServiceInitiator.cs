@@ -7,9 +7,9 @@ using Windows.System.RemoteSystems;
 
 namespace Link10.AppServices
 {
-    public abstract class AppServiceConnectionInitiator : AppServiceConnectionEndPoint, IAppServiceConnectionInitiator
+    public abstract class AppServiceInitiator : AppServiceEndpoint, IAppServiceInitiator
     {
-        public AppServiceConnectionInitiator(string appServiceName, string receiverPackageFamilyName)
+        public AppServiceInitiator(string appServiceName, string receiverPackageFamilyName)
             : base(new AppServiceConnection() { AppServiceName = appServiceName, PackageFamilyName = receiverPackageFamilyName }, false)
         {
             ConnectionAlive = false;

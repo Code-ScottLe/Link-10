@@ -9,7 +9,7 @@ using Windows.Foundation.Collections;
 
 namespace Link10.AppServices
 {
-    public abstract class AppServiceConnectionEndPoint : IAppServiceConnectionEndPoint
+    public abstract class AppServiceEndpoint : IAppServiceEndpoint
     {
         public string AppServiceName
         {
@@ -31,9 +31,9 @@ namespace Link10.AppServices
             get; protected set;
         }
 
-        public event TypedEventHandler<IAppServiceConnectionEndPoint, AppServiceEndPointTerminationReason> AppServiceConnectionTerminated;
+        public event TypedEventHandler<IAppServiceEndpoint, AppServiceEndpointTerminationReason> AppServiceConnectionTerminated;
 
-        protected AppServiceConnectionEndPoint(AppServiceConnection connection, bool isConnectionAlreadyAlive)
+        protected AppServiceEndpoint(AppServiceConnection connection, bool isConnectionAlreadyAlive)
         {
             ConnectionAlive = isConnectionAlreadyAlive;
             Connection = connection;
@@ -107,12 +107,12 @@ namespace Link10.AppServices
 
         protected virtual void OnConnectionClosed(AppServiceConnection sender, AppServiceClosedEventArgs args)
         {
-            CloseConnectionAsync(AppServiceEndPointTerminationReason.RequestorTerminate);
+            CloseConnectionAsync(AppServiceEndpointTerminationReason.RequestorTerminate);
         }
 
         protected abstract void OnRequestReceived(AppServiceConnection sender, AppServiceRequestReceivedEventArgs args);
 
-        public virtual Task CloseConnectionAsync(AppServiceEndPointTerminationReason reason)
+        public virtual Task CloseConnectionAsync(AppServiceEndpointTerminationReason reason)
         {
             Connection?.Dispose();
             Connection = null;

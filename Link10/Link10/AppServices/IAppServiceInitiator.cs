@@ -6,7 +6,7 @@ using Windows.System.RemoteSystems;
 
 namespace Link10.AppServices
 {
-    public interface IAppServiceConnectionInitiator : IAppServiceConnectionEndPoint
+    public interface IAppServiceInitiator : IAppServiceEndpoint
     {
         Task OpenConnectionAsync();
 

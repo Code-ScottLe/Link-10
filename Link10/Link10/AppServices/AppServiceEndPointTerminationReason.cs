@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Link10.AppServices
 {
-    public enum AppServiceEndPointTerminationReason
+    public enum AppServiceEndpointTerminationReason
     {
         RequestorTerminate = 0,
         BackgroundTaskCancelled,

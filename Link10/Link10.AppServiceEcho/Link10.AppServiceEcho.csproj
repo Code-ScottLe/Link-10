@@ -119,9 +119,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AppServices\EchoAppServiceConnectionEndpoint.cs" />
-    <Compile Include="AppServices\IIncomingAppServiceConnectionHandler.cs" />
-    <Compile Include="AppServices\IncomingAppServiceConnectionHandler.cs" />
+    <Compile Include="AppServices\EchoAppServiceEndpoint.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

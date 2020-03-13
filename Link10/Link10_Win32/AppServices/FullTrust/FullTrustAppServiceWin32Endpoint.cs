@@ -9,7 +9,7 @@ using Windows.ApplicationModel.AppService;
 
 namespace Link10.AppServices.FullTrust
 {
-    public abstract class FullTrustAppServiceWin32Endpoint : AppServiceConnectionInitiator
+    public abstract class FullTrustAppServiceWin32Endpoint : AppServiceInitiator
     {
         public FullTrustAppServiceWin32Endpoint(string fullTrustAppServiceName)
             : base (fullTrustAppServiceName, Package.Current.Id.FamilyName)

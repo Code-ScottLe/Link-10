@@ -25,8 +25,6 @@ namespace Link10.AppServiceEcho
     /// </summary>
     sealed partial class App : Application
     {
-        private IIncomingAppServiceConnectionHandler _appServiceHandler;
-
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -37,7 +35,6 @@ namespace Link10.AppServiceEcho
             this.Suspending += OnSuspending;
 
             // Dependency injection compatible.
-            _appServiceHandler = new IncomingAppServiceConnectionHandler();
         }
 
         /// <summary>
@@ -103,7 +100,7 @@ namespace Link10.AppServiceEcho
             var deferral = e.SuspendingOperation.GetDeferral();
 
             //TODO: Save application state and stop any background activity
-            ((IncomingAppServiceConnectionHandler)_appServiceHandler).HandleAppSuspending(e);
+            //((IncomingAppServiceConnectionHandler)_appServiceHandler).HandleAppSuspending(e);
 
             deferral.Complete();
         }
@@ -114,7 +111,7 @@ namespace Link10.AppServiceEcho
 
             if (args.TaskInstance.TriggerDetails is AppServiceTriggerDetails triggerDetails)
             {
-                _appServiceHandler.OnIncomingAppServiceConnection(args.TaskInstance);
+                AppServiceHost.Instance.HandleIncomingRequest(args.TaskInstance, triggerDetails);
             }
         }
     }

@@ -7,14 +7,14 @@ using Windows.ApplicationModel.Background;
 
 namespace Link10.AppServices
 {
-    public abstract class AppServiceConnectionReceiver : AppServiceConnectionEndPoint
+    public abstract class AppServiceReceiver : AppServiceEndpoint
     {
         protected BackgroundTaskDeferral ServiceDeferral
         {
             get; set;
         }
 
-        public AppServiceConnectionReceiver(IBackgroundTaskInstance instance, AppServiceTriggerDetails appServiceTriggerDetails)
+        public AppServiceReceiver(IBackgroundTaskInstance instance, AppServiceTriggerDetails appServiceTriggerDetails)
             : base(appServiceTriggerDetails.AppServiceConnection, true)
         {
             ConnectionAlive = true;
@@ -29,10 +29,10 @@ namespace Link10.AppServices
         /// <param name="reason"></param>
         protected virtual void OnAppServiceCancelled(IBackgroundTaskInstance sender, BackgroundTaskCancellationReason reason)
         {
-            var ignored = CloseConnectionAsync(AppServiceEndPointTerminationReason.BackgroundTaskCancelled);
+            var ignored = CloseConnectionAsync(AppServiceEndpointTerminationReason.BackgroundTaskCancelled);
         }
 
-        public override async Task CloseConnectionAsync(AppServiceEndPointTerminationReason reason)
+        public override async Task CloseConnectionAsync(AppServiceEndpointTerminationReason reason)
         {
             await base.CloseConnectionAsync(reason);
 
