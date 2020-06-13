@@ -9,21 +9,6 @@
     <Import_RootNamespace>Link10</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)AppServices\AppServiceClient.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)AppServices\AppServiceEndpoint.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)AppServices\AppServiceHandlerAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)AppServices\AppServiceHost.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)AppServices\AppServiceInitiator.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)AppServices\AppServiceReceiver.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)AppServices\AppServiceEndpointTerminationReason.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)AppServices\AppServiceTransmissionException.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)AppServices\IAppServiceEndpoint.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)AppServices\IAppServiceInitiator.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)AppServices\Link10UriExtension.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)AppServices\Routing\IRoutedAppServiceEndpointFactory.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)AppServices\Routing\RoutedAppServiceEndpointExtensionMethods.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)AppServices\Routing\RoutedAppServiceInitiator.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)AppServices\Routing\RoutedAppServiceReceiver.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)TaskExtensionMethods.cs" />
   </ItemGroup>
 </Project>
