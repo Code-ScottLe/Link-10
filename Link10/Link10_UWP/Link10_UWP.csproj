@@ -121,9 +121,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RemoteSessions\IRemoteSessionClient.cs" />
-    <Compile Include="RemoteSessions\IRemoteSessionHost.cs" />
-    <Compile Include="RemoteSessions\IRemoteSessionParticipant.cs" />
     <EmbeddedResource Include="Properties\Link10_UWP.rd.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -136,9 +133,15 @@
     <PackageReference Include="Newtonsoft.Json">
       <Version>12.0.3</Version>
     </PackageReference>
+    <PackageReference Include="System.Reactive">
+      <Version>4.4.1</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Link10_UWP.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="RemoteSessions\" />
   </ItemGroup>
   <Import Project="..\Link10\Link10.projitems" Label="Shared" />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

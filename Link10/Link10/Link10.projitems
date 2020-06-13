@@ -9,6 +9,7 @@
     <Import_RootNamespace>Link10</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AppServices\AppServiceHost.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)TaskExtensionMethods.cs" />
   </ItemGroup>
 </Project>
