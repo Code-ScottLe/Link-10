@@ -10,7 +10,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)AppServices\AppServiceHost.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AppServices\CallRoutingService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AppServices\ControllerBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AppServices\RouteAttribute.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)TaskExtensionMethods.cs" />
   </ItemGroup>
 </Project>
